@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__container">
+        <a href="/" class="breadcrumbs__link">Главная</a>
+        <div class="breadcrumbs__icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.51562 4.48438C5.82031 4.76562 5.82031 5.25781 5.51562 5.53906L1.76562 9.28906C1.48438 9.59375 0.992188 9.59375 0.710938 9.28906C0.40625 9.00781 0.40625 8.51562 0.710938 8.23438L3.92188 5L0.710938 1.78906C0.40625 1.50781 0.40625 1.01562 0.710938 0.734375C0.992188 0.429688 1.48438 0.429688 1.76562 0.734375L5.51562 4.48438Z"
+              fill="#254262" />
+          </svg>
+        </div>
+        <div class="breadcrumbs__item">
+          404
+        </div>
+      </div>
+    </div>
+    <main class="page 404-page">
+      <section class="not-found">
+        <div class="not-found__container">
+          <div class="not-found__number">404</div>
+          <div class="not-found__bottom">
+            <h2 class="not-found__headline h2-title">Нет такой страницы</h2>
+            <p class="not-found__text">
+              Запрашиваемой страницы не существует. Возможно, она была удалена или в запросе
+              был указан неверный адрес страницы. Попробуйте начать с
+              <a href="/" class="not-found__link">главной страницы</a> или ознакомьтесь с
+              <a href="projects.html" class="not-found__link">нашими работами</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

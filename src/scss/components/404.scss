@@ -1,0 +1,28 @@
+.not-found {
+  padding: 40px 0 100px;
+  &__container {
+  }
+  &__number {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 150px;
+    font-weight: 900;
+    line-height: normal;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__headline {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  &__text {
+    color: var(--primary-color);
+  }
+  &__link {
+    color: var(--primary-color);
+    text-decoration-line: underline;
+  }
+}

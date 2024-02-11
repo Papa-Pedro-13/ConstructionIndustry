@@ -1,0 +1,68 @@
+.portfolio {
+  margin-top: 100px;
+  padding: 50px 0;
+  &__container {
+    gap: 20px;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__headline {
+    text-align: center;
+    color: var(--primary-color);
+  }
+}
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__img {
+    border-radius: 60px 60px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+  }
+  &__location {
+    display: none;
+  }
+  &__block {
+  }
+  &__title {
+  }
+  &__props {
+    display: none;
+  }
+}
+.portfolio-page .main__text {
+  max-width: 668px;
+}
+.card-props__container {
+}
+.card-props__item {
+}
+.card-props__icon {
+}
+.card-props__text {
+}
+.main__props.card-props .card-props__text {
+  font-size: 15px;
+  line-height: 18px;
+}
+.portfolio-page .main {
+  .btn {
+    font-size: 12px;
+    padding: 10px 24px 10px 16px;
+    height: 40px;
+  }
+}
+.portfolio-page .main {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../images/main-bg.jpg);
+}

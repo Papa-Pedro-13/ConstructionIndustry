@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__column">
+      <a href="/" class="footer__logo">
+        <img style='fill:#000' src="./images/footer-logo.svg" alt="">
+      </a>
+      <p class="footer__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</p>
+      <div class="footer__socials socials">
+        @@include("socials.html")
+      </div>
+
+    </div>
+    <div class="footer__column">
+      <div class="footer__title">
+        Главное меню
+      </div>
+      <menu class="footer__menu menu">
+        @@include("menu.html")
+      </menu>
+    </div>
+    <div class="footer__column">
+      <div class="footer__title">
+        Связаться с нами
+      </div>
+      <div class="footer__contacts contacts">
+        @@include("contacts-block.html")
+      </div>
+      <form action="#" method="post" class="tel-form">
+        <input class='tel-form__input' type="text" name='phone' placeholder='Номер телефона'>
+        <button type="submit" class="btn btn-brown">Перезвонить</button>
+      </form>
+      <p class="footer__rights">
+        Все права защищены. Любое копирование и воспроизведение текста, в том числе частичное и в любых формах, без
+        письменного разрешения правообладателя запрещено.
+      </p>
+    </div>
+  </div>
+</footer>

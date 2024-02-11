@@ -1,0 +1,28 @@
+.filters {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+  &__select {
+    width: 100%;
+
+    * {
+      width: 100%;
+    }
+  }
+  &__input-group {
+    display: flex;
+    gap: 13px;
+  }
+  &__input {
+    background: #f6f6f6;
+    width: 50%;
+    color: #575757;
+    font-size: 15px;
+    &::placeholder {
+      color: #575757;
+    }
+    &:-ms-input-placeholder {
+      color: #575757;
+    }
+  }
+}

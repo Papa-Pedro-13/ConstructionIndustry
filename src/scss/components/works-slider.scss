@@ -1,0 +1,133 @@
+.works-slider {
+  padding: 50px 0;
+  &__container {
+    gap: 20px;
+  }
+  &__top {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  &__headline {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  &__nav {
+  }
+  &__slider {
+    width: 100%;
+    height: 100%;
+  }
+}
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 220px;
+  width: 100%;
+  margin: 0 auto;
+  &__arrow {
+  }
+  &__left {
+  }
+  &__right {
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 95px;
+  height: 65px;
+  padding: 16px 20px 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: var(--primary-hover-color);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  * {
+    fill: var(--primary-color);
+  }
+}
+.swiper-button-disabled {
+  background: inherit;
+  border: 5px solid #838383;
+
+  * {
+    fill: #838383;
+  }
+}
+
+.works-slider-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px 60px 0px 0px;
+  }
+  &__title {
+  }
+  &__text {
+    color: var(--primary-color);
+  }
+}
+.works-slider__left {
+  display: none;
+  width: 465px;
+  align-items: flex-end;
+  position: relative;
+  height: 715px;
+  padding: 37px 32px;
+  &::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 44, 67, 0) 0%,
+      rgba(0, 0, 0, 0.55) 51.04%
+    );
+    border-radius: 0px 0px 0px 60px;
+  }
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 14px;
+  height: 22px;
+}
+.works-slider__left-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px; /* 100% */
+  span {
+    font-size: 57px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.works-slider__left-img {
+  position: absolute;
+  height: 815px;
+  top: -100px;
+  left: 0;
+  object-fit: cover;
+  object-position: 60%;
+  border-radius: 0px 0px 0px 60px;
+  overflow: hidden;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
